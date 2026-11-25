@@ -1,0 +1,238 @@
+---
+name: Teuku Aqiel Portfolio System
+colors:
+  surface: '#faf9f6'
+  surface-dim: '#dbdad7'
+  surface-bright: '#faf9f6'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f4f3f1'
+  surface-container: '#efeeeb'
+  surface-container-high: '#e9e8e5'
+  surface-container-highest: '#e3e2e0'
+  on-surface: '#1a1c1a'
+  on-surface-variant: '#54433e'
+  inverse-surface: '#2f312f'
+  inverse-on-surface: '#f2f1ee'
+  outline: '#87736d'
+  outline-variant: '#dac1bb'
+  surface-tint: '#944933'
+  primary: '#914731'
+  on-primary: '#ffffff'
+  primary-container: '#af5e47'
+  on-primary-container: '#fffbff'
+  inverse-primary: '#ffb5a0'
+  secondary: '#5a605c'
+  on-secondary: '#ffffff'
+  secondary-container: '#dfe4df'
+  on-secondary-container: '#606662'
+  tertiary: '#565d5b'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#6f7673'
+  on-tertiary-container: '#f7fefa'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#ffdbd1'
+  primary-fixed-dim: '#ffb5a0'
+  on-primary-fixed: '#3b0900'
+  on-primary-fixed-variant: '#76321e'
+  secondary-fixed: '#dfe4df'
+  secondary-fixed-dim: '#c3c8c3'
+  on-secondary-fixed: '#181d1a'
+  on-secondary-fixed-variant: '#434844'
+  tertiary-fixed: '#dde4e0'
+  tertiary-fixed-dim: '#c1c8c4'
+  on-tertiary-fixed: '#161d1b'
+  on-tertiary-fixed-variant: '#414845'
+  background: '#faf9f6'
+  on-background: '#1a1c1a'
+  surface-variant: '#e3e2e0'
+typography:
+  display-hero:
+    fontFamily: Playfair Display
+    fontSize: 56px
+    fontWeight: '600'
+    lineHeight: 68px
+    letterSpacing: -0.02em
+  display-hero-mobile:
+    fontFamily: Playfair Display
+    fontSize: 38px
+    fontWeight: '600'
+    lineHeight: 46px
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Playfair Display
+    fontSize: 40px
+    fontWeight: '600'
+    lineHeight: 50px
+    letterSpacing: -0.015em
+  headline-lg-mobile:
+    fontFamily: Playfair Display
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 36px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Playfair Display
+    fontSize: 28px
+    fontWeight: '500'
+    lineHeight: 38px
+  headline-sm:
+    fontFamily: Playfair Display
+    fontSize: 22px
+    fontWeight: '500'
+    lineHeight: 30px
+  body-lg:
+    fontFamily: Newsreader
+    fontSize: 20px
+    fontWeight: '400'
+    lineHeight: 34px
+  body-md:
+    fontFamily: Newsreader
+    fontSize: 17px
+    fontWeight: '400'
+    lineHeight: 28px
+  body-sm:
+    fontFamily: Newsreader
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+  label-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+    letterSpacing: 0.04em
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 18px
+    letterSpacing: 0.06em
+  label-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.08em
+  quote:
+    fontFamily: Newsreader
+    fontSize: 22px
+    fontWeight: '400'
+    lineHeight: 36px
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-tablet: 1.25rem
+  gutter-mobile: 1rem
+  margin: 4rem
+  margin-tablet: 2rem
+  margin-mobile: 1.25rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.75rem
+  space-xl: 3rem
+---
+
+## Brand & Style
+
+This design system establishes a refined, literary-focused visual identity for Teuku Aqiel, an Indonesian Content Writer, Editor, Proofreader, and Scriptwriter. 
+
+The aesthetic channels the prestige and quiet confidence of an independent literary journal, high-end editorial press, and modern cultural essay platform. It balances disciplined minimalism with tactile warmth, avoiding sterile tech conventions in favor of organic, page-like structure. 
+
+### Core Attributes
+- **Literary & Contemplative:** Emphasizes long-form legibility, measured pacing, and poetic restraint.
+- **Authoritative Craft:** Reflects meticulous editorial standards through sharp typographic hierarchy and structured hairline separators.
+- **Warm & Organic:** Subdued paper and sand tones replace stark whites, evoking physical publication sheets, archival bindings, and natural inks.
+- **Indonesian Cultural Nuance:** Native UI labeling with natural, sophisticated phrasing (e.g., *Karya Terpilih*, *Tentang*, *Jasa Editorial*, *Hubungi*), maintaining an intellectual yet accessible tone.
+
+## Colors
+
+The color palette is derived from physical archival print: soft alabaster paper, deep carbon ink, slate annotations, and a single muted terracotta accent drawn from classic bookbinder cloth and editor's ink.
+
+### Palette Architecture
+- **Base Canvas (`#FAF9F6`):** Soft alabaster. Used for full-page canvas background to diminish glare and evoke unbleached paper.
+- **Surface Elevation / Cards (`#F2EFE9`):** Soft sand/linen tint. Creates quiet contrast without requiring deep shadows.
+- **Surface Elevated Interactive (`#E8E3DA`):** Slightly deeper sand tone for hover states and secondary action badges.
+- **Primary Ink / Headings (`#1F2421`):** Deep carbon charcoal. Replaces harsh `#000000` to deliver high editorial legibility with soft optical presence.
+- **Muted Ink / Body Copy (`#5C6360`):** Muted slate gray. Tuned for sustained reading across long essays, script samples, and project descriptions.
+- **Accent Terracotta (`#C06C54`):** Soft terracotta. Used sparingly for interactive focal points, category pill badges, byline highlights, link text hover, and primary CTAs.
+- **Hairline Border (`#E4DFD5`):** 1px subtle divider tone to mimic ruled publishing margins.
+
+## Typography
+
+The typographic pairing reflects dual operational needs: literary immersion and precise functional navigation.
+
+- **Headlines & Display:** Playfair Display introduces classic, intellectual grandeur for hero declarations, article titles, and script headers. It holds high contrast strokes and graceful terminals.
+- **Reading Body:** Newsreader handles long-form excerpts, portfolio case summaries, and proofreading comparisons, offering exceptional prose flow and rhythm.
+- **UI & Interface Metadata:** Plus Jakarta Sans grounds the interface in contemporary clarity. It manages navigation links, metadata counters, tags, timestamps, and button labels in uppercase or tracked lowercase.
+
+## Layout & Spacing
+
+The portfolio employs a deliberate, asymmetrical fluid-grid system structured to emulate editorial column spreads.
+
+### Grid Anatomy
+- **Desktop (>= 1200px):** 12-column layout with a generous `margin` of 4rem (64px) and `gutter` of 1.5rem (24px). Long-form essays are constrained to a centered 7-to-8 column measure (max-width: 720px) to maintain optimal reading line length.
+- **Tablet (768px - 1199px):** 8-column layout with `margin-tablet` of 2rem (32px) and `gutter-tablet` of 1.25rem (20px). Multi-column case grids compress into balanced 2-column cards.
+- **Mobile (< 768px):** 4-column layout with `margin-mobile` of 1.25rem (20px) and `gutter-mobile` of 1rem (16px). All content reflows to a clean single column.
+
+### Rhythmic Philosophy
+Space is treated as positive compositional breathing room. Vertical distance between distinct sections scales generously (`space-xl` and above) to let each creative domain (Penulisan Naskah, Penyuntingan, Penulisan Artikel) sit in isolation without sensory clutter.
+
+## Elevation & Depth
+
+This design system deliberately eschews modern volumetric drop-shadows and neomorphic effects, relying entirely on **tonal layering and low-contrast outlines** to create visual hierarchy.
+
+- **Ground Level:** `#FAF9F6` base page surface.
+- **Mid-Tier Elements (Article Cards, Bio Containers, Work Sheets):** Built with `#F2EFE9` surfaces paired with a crisp `1px solid #E4DFD5` border.
+- **Active / Hover Elevating:** Rather than floating upward via heavy shadows, hovered containers transition their background to `#EBE6DC` and subtly darken their border to `#D5CFC3` with a smooth 200ms ease curve.
+- **Overlays / Menus / Dialogs:** Elevated surfaces employ an ultra-subtle tinted ambient diffuse shadow: `box-shadow: 0 12px 32px -8px rgba(31, 36, 33, 0.05)`, preserving the clean two-dimensional nature of paper.
+
+## Shapes
+
+The design system uses a subtle roundedness standard (`2` / 8px base).
+
+- Standard interactive components (buttons, input fields, cards, modal panels) employ a precise `8px` (`0.5rem`) corner radius. This softens the interface without feeling overly playful or bubbly.
+- Category tags, metadata chips, and small pill status indicators employ fully rounded pill radii (`rounded-full` / 9999px) to contrast with architectural rectangular cards.
+- Divider lines, table rules, and manuscript pull-quotes use strictly squared, sharp 1px strokes.
+
+## Components
+
+### 1. Buttons (Tombol Tindakan)
+- **Primary CTA:** Solid Terracotta (`#C06C54`) background, text in `#FAF9F6`, 8px radius, font `label-lg`. Padding: `12px 24px`. Hover state: `#A85842`. Transition: `background-color 200ms ease`.
+- **Secondary / Outline:** Transparent background, 1px solid `#1F2421`, text in `#1F2421`. Hover state: `#1F2421` fill with `#FAF9F6` text.
+- **Text Link CTA:** Newsreader or Plus Jakarta Sans with a persistent 1px underline in `#C06C54` offset by 4px. On hover, the link color transitions to `#C06C54`.
+
+### 2. Editorial Work Cards (Kartu Portofolio)
+- Container background `#F2EFE9`, bordered with 1px `#E4DFD5`, 8px radius.
+- Padding: 28px desktop, 20px mobile.
+- Features category tag (e.g., *Naskah Film*, *Esai Budaya*, *Penyuntingan Buku*) at the top, followed by the title in `headline-md` (`Playfair Display`), client/publication metadata in `label-md`, and excerpt in `body-sm`.
+
+### 3. Category Tags & Chips (Label Kategori)
+- Background `#E8E3DA`, text in `#C06C54`, full pill radius (`9999px`).
+- Typography: `label-sm` in all-caps with `0.08em` letter spacing.
+- Padding: `4px 12px`.
+
+### 4. Input Fields & Textareas (Formulir Kontak)
+- Background `#FAF9F6`, border: `1px solid #D5CFC3`, 8px radius.
+- Text: `#1F2421`, placeholder: `#8C9390`.
+- Focus ring: `1px solid #C06C54` without aggressive outer glow, keeping focus crisp and minimal.
+
+### 5. Checkboxes & Radio Controls
+- Base box/circle: `18px`, border `1.5px solid #5C6360`, background `#FAF9F6`.
+- Checked state: `#C06C54` fill with white checkmark.
+
+### 6. Editorial Comparison Component (Uji Sunting / Before & After)
+- A specialized component displaying original vs. proofread drafts.
+- Two-column split container with vertical 1px divider in `#E4DFD5`. Left column displays unedited copy with strikethrough notation; right column displays Teuku Aqiel’s polished edit with subtle terracotta inline additions.
+
+### 7. Manuscript Excerpt Drawer (Kutipan Naskah)
+- Indented blockquote styled with a 2px left border in `#C06C54`, background transparent or `#F2EFE9`, typography in `quote` (`Newsreader` italic), followed by source attribution in `label-md`.

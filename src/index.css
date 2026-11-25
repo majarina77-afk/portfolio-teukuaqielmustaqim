@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-canvas: #faf9f6;
+  --color-paper: #f2efe9;
+  --color-paper-hover: #ebe6dc;
+  --color-sand: #e8e3da;
+  --color-ink: #1f2421;
+  --color-ink-muted: #5c6360;
+  --color-terracotta: #c06c54;
+  --color-terracotta-dark: #a85842;
+  --color-terracotta-deep: #914731;
+  --color-rule: #e4dfd5;
+  --color-rule-dark: #d5cfc3;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-serif);
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+/* Literary drop cap for opening paragraphs in the Article Reader */
+.editorial-dropcap::first-letter {
+  font-family: var(--font-display);
+  float: left;
+  font-size: 3.45rem;
+  line-height: 0.85;
+  padding-top: 0.35rem;
+  padding-right: 0.65rem;
+  padding-bottom: 0.1rem;
+  font-weight: 600;
+  color: var(--color-terracotta-deep);
+}
+
+/* Subtle paper grain overlay feel without noisy artifacts */
+.editorial-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--color-terracotta);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

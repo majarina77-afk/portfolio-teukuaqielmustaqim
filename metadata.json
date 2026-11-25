@@ -1,0 +1,6 @@
+{
+  "name": "Teuku Aqiel — Portofolio Penulis & Penyunting",
+  "description": "Portofolio editorial dan ruang baca karya tulis Teuku Aqiel: artikel budaya, esai, fiksi, penulisan naskah, serta jasa penyuntingan bahasa Indonesia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
