@@ -5,6 +5,7 @@ import { ArticleReader } from './components/ArticleReader';
 import { ContactSection } from './components/ContactSection';
 import { EditorialComparison } from './components/EditorialComparison';
 import { Navbar } from './components/Navbar';
+import { N8nChatbot } from './components/N8nChatbot';
 import { Toast } from './components/Toast';
 import { WorkCard } from './components/WorkCard';
 import {
@@ -715,6 +716,15 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      <N8nChatbot
+        pageContext={
+          selectedArticle
+            ? `Membaca karya: ${selectedArticle.title}`
+            : `Beranda Portofolio (Kategori aktif: ${activeCategory})`
+        }
+        onCopyEmail={handleCopyEmail}
+      />
 
       <Toast message={toastMessage} />
     </div>

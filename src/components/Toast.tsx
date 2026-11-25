@@ -8,7 +8,7 @@ interface ToastProps {
 export function Toast({ message }: ToastProps) {
   return (
     <div
-      className="pointer-events-none fixed bottom-6 right-6 z-50 flex justify-end px-4 sm:px-0"
+      className="pointer-events-none fixed right-4 bottom-20 z-50 flex justify-end sm:right-6 sm:bottom-22"
       role="status"
       aria-live="polite"
       aria-atomic="true"
