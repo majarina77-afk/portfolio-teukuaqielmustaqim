@@ -1,6 +1,6 @@
 import { ArticleWork, ComparisonShowcaseItem, ServiceItem, WorkCategory } from '../types';
 
-export const AUTHOR_EMAIL = 'halo@teukuaqiel.id';
+export const AUTHOR_EMAIL = 'teukuaqielmustaqim@gmail.com';
 
 export const WORK_CATEGORIES: WorkCategory[] = [
   'Semua',
@@ -206,7 +206,7 @@ export const PORTFOLIO_WORKS: ArticleWork[] = [
         ],
         quote: {
           text: 'Kejernihan bahasa bukanlah penyederhanaan gagasan, melainkan penghormatan tertinggi kepada waktu yang dipinjamkan pembaca kepada kita.',
-          attribution: 'Teuku Aqiel — Kolom Redaksi Nalar',
+          attribution: 'Teuku Aqiel Mustaqim — Kolom Redaksi Nalar',
         },
       },
       {

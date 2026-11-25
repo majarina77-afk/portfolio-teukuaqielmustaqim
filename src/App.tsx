@@ -216,7 +216,7 @@ export default function App() {
                   </h1>
 
                   <p className="mt-6 max-w-[600px] font-serif text-[18px] leading-[1.72] text-[#5C6360] sm:text-[20px]">
-                    Saya Teuku Aqiel. Saya membantu penerbit, media independen,
+                    Saya Teuku Aqiel Mustaqim. Saya membantu penerbit, media independen,
                     rumah produksi, dan jenama merumuskan esai budaya, naskah
                     cerita, serta penyuntingan bahasa Indonesia yang tenang,
                     presisi, dan layak dibaca berulang kali.
@@ -255,7 +255,7 @@ export default function App() {
                     lapang.”
                   </blockquote>
                   <p className="mt-4 font-sans text-[12px] font-medium tracking-[0.05em] text-[#5C6360]">
-                    — Prinsip Kerja Editorial, Teuku Aqiel
+                    — Prinsip Kerja Editorial, Teuku Aqiel Mustaqim
                   </p>
                 </div>
 
@@ -670,11 +670,17 @@ export default function App() {
         <div className="mx-auto flex max-w-[1280px] flex-col items-start justify-between gap-6 px-5 sm:flex-row sm:items-center sm:px-8 lg:px-16">
           <div>
             <p className="font-display text-[18px] font-semibold text-[#1F2421]">
-              Teuku Aqiel
+              Teuku Aqiel Mustaqim
             </p>
             <p className="mt-1 font-sans text-[12px] text-[#5C6360]">
-              © 2026 Teuku Aqiel. Penulis Konten, Penyunting &amp; Penulis Naskah.
+              © 2026 Teuku Aqiel Mustaqim. Penulis Konten, Penyunting &amp; Penulis Naskah.
             </p>
+            <a
+              href={`mailto:${AUTHOR_EMAIL}`}
+              className="mt-1.5 inline-block font-sans text-[12.5px] font-medium text-[#914731] transition-colors hover:text-[#C06C54]"
+            >
+              {AUTHOR_EMAIL}
+            </a>
           </div>
 
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 font-sans text-[12.5px] font-medium text-[#5C6360]">

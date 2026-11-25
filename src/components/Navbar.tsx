@@ -33,9 +33,9 @@ export function Navbar({
         <button
           type="button"
           onClick={() => handleNavClick('beranda')}
-          className="cursor-pointer font-display text-xl font-semibold tracking-[-0.015em] text-[#1F2421] transition-colors duration-200 hover:text-[#C06C54] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C06C54] whitespace-nowrap shrink-0 sm:text-[22px]"
+          className="cursor-pointer font-display text-[18px] font-semibold tracking-[-0.015em] text-[#1F2421] transition-colors duration-200 hover:text-[#C06C54] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C06C54] whitespace-nowrap shrink-0 sm:text-[21px]"
         >
-          Teuku Aqiel
+          Teuku Aqiel Mustaqim
         </button>
 
         {/* Zone 2: Clean Single-Line Navigation Links (Desktop) */}
@@ -113,7 +113,7 @@ export function Navbar({
                 onClick={() => handleNavClick('kontak')}
                 className="flex min-h-[44px] w-full cursor-pointer items-center justify-center rounded-lg bg-[#C06C54] px-4 py-2.5 font-sans text-sm font-semibold tracking-[0.04em] text-[#FAF9F6] transition-colors hover:bg-[#A85842]"
               >
-                Hubungi Teuku Aqiel
+                Hubungi Teuku Aqiel Mustaqim
               </button>
             </div>
           </nav>

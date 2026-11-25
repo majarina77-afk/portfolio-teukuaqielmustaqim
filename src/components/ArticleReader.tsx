@@ -104,7 +104,7 @@ export function ArticleReader({
             {/* Byline Strip */}
             <div className="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-[#E4DFD5] pt-5 font-sans text-[12.5px] text-[#5C6360]">
               <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
-                <span className="font-semibold text-[#1F2421]">Teuku Aqiel</span>
+                <span className="font-semibold text-[#1F2421]">Teuku Aqiel Mustaqim</span>
                 <span className="text-[#87736D]" aria-hidden="true">
                   ·
                 </span>
@@ -277,7 +277,7 @@ export function ArticleReader({
                     Tentang Penulis
                   </p>
                   <h3 className="mt-1.5 font-display text-[22px] font-medium text-[#1F2421]">
-                    Teuku Aqiel
+                    Teuku Aqiel Mustaqim
                   </h3>
                   <p className="mt-2 font-serif text-[15.5px] leading-[1.65] text-[#5C6360]">
                     Penulis konten, penyunting bahasa, dan penulis naskah yang

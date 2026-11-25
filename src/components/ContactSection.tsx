@@ -32,10 +32,23 @@ export function ContactSection({
     );
   };
 
+  const buildFormMailtoUrl = () => {
+    const topicList =
+      selectedTopics.length > 0
+        ? selectedTopics.join(', ')
+        : 'Konsultasi Editorial';
+    const subject = `Kolaborasi Editorial dari ${name.trim()}`;
+    const body = `Halo Teuku Aqiel Mustaqim,\n\nNama: ${name.trim()}\nEmail: ${senderEmail.trim()}\nKebutuhan: ${topicList}\n\nPesan:\n${message.trim()}`;
+    return `mailto:${AUTHOR_EMAIL}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !senderEmail.trim() || !message.trim()) return;
     setSubmitted(true);
+    window.location.href = buildFormMailtoUrl();
   };
 
   const handleReset = () => {
@@ -96,7 +109,7 @@ export function ContactSection({
 
                   <a
                     href={`mailto:${AUTHOR_EMAIL}?subject=${encodeURIComponent(
-                      'Penawaran Kolaborasi Editorial — Teuku Aqiel'
+                      'Penawaran Kolaborasi Editorial — Teuku Aqiel Mustaqim'
                     )}`}
                     className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-[#1F2421] px-5 py-2.5 font-sans text-[13px] font-semibold tracking-[0.04em] text-[#1F2421] transition-colors duration-200 hover:bg-[#1F2421] hover:text-[#FAF9F6] whitespace-nowrap"
                   >
@@ -131,9 +144,12 @@ export function ContactSection({
                   Terima kasih, {name}.
                 </h3>
                 <p className="mt-3 font-serif text-[17px] leading-[1.7] text-[#5C6360]">
-                  Catatan proyek Anda telah tercatat di halaman ini. Untuk
-                  respons paling cepat, Anda dapat langsung menyalin alamat
-                  email redaksi atau mengirimkannya melalui aplikasi surel Anda.
+                  Draf pesan Anda telah disiapkan untuk dikirim ke{' '}
+                  <span className="font-medium text-[#1F2421]">
+                    {AUTHOR_EMAIL}
+                  </span>
+                  . Jika aplikasi surel belum terbuka otomatis, gunakan tombol di
+                  bawah ini.
                 </p>
 
                 <div className="mt-6 rounded-lg border border-[#E4DFD5] bg-[#FAF9F6] p-5 font-serif text-[15px] leading-[1.68] text-[#1F2421]">
@@ -148,16 +164,11 @@ export function ContactSection({
 
                 <div className="mt-6 flex flex-wrap items-center gap-3">
                   <a
-                    href={`mailto:${AUTHOR_EMAIL}?subject=${encodeURIComponent(
-                      `Kolaborasi Editorial dari ${name}`
-                    )}&body=${encodeURIComponent(
-                      `Halo Teuku Aqiel,\n\nNama: ${name}\nEmail: ${senderEmail}\nKebutuhan: ${selectedTopics.join(
-                        ', '
-                      )}\n\nPesan:\n${message}`
-                    )}`}
+                    href={buildFormMailtoUrl()}
                     className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-[#C06C54] px-5 py-2.5 font-sans text-[13px] font-semibold tracking-[0.04em] text-[#FAF9F6] transition-colors hover:bg-[#A85842]"
                   >
-                    Kirim via Surel
+                    <Mail className="h-4 w-4" />
+                    <span>Kirim via Surel</span>
                   </a>
                   <button
                     type="button"
